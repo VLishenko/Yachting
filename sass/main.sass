@@ -355,3 +355,98 @@ ul .inner-list
 			+transition (all 0.2s ease)
 			&:hover
 				color: #0c9	
+
+//Path page
+.path-page
+	width: 100%
+	padding: 0 65px 0 75px
+.path-title
+	color: #323233
+	font-family: "PlayfairDisplay-Regular"
+	font-size: 54px
+	+transition (all 0.4s ease)
+.path-title__position
+	margin-left: 100px
+	margin-top: 82px
+	letter-spacing: 1px
+.path-map-block
+	position: relative
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+	+transition (all 0.4s ease)
+	&__position
+		padding-top: 8px
+	p
+		position: relative
+		color: #323233
+		font-size: 16px
+		font-family: "PTSans-Regular"
+		line-height: 28px
+		text-transform: uppercase
+		width: 550px
+		letter-spacing: 0.6px
+		padding-right: 15px
+		&:before
+			position: absolute
+			left: 0
+			top: 0
+			content: ''
+			display: inline-block
+			width: 3px
+			height: 240px
+			opacity: 0.1
+			background-color: #323233
+			margin-left: -80px
+    	margin-top: -15px
+	&--img
+		margin-left: 20px
+		margin-top: 8px
+	img
+		width: 100%
+		max-width: 700px
+		height: auto
+
+.path-gallery-block
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	&__position
+		margin-top: 56px
+	&--images
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-content: flex-start
+		img
+			width: 100%
+			height: auto
+		&__small
+			width: 49%
+			max-width: 450px
+			margin-bottom: 35px
+			&:first-child
+				margin-right: 1%
+		&__large
+			width: 100%
+
+	p
+		width: 58%
+		min-width: 400px
+		padding-left: 35px
+		color: #323233
+		font-size: 16px
+		font-family: "PTSans-Regular"
+		line-height: 28px
+		text-transform: uppercase
+		letter-spacing: 0.6px
