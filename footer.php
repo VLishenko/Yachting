@@ -122,9 +122,9 @@
 </div>
 <!-- End Hidden Navigation -->
 
-	<script src="libs/jquery/dist/jquery.js"></script>
-	<script src="libs/pushy-master/pushy.js"></script>
-	<script src="js/common.js"></script>
+	<script src="libs/jquery/dist/jquery.js" defer></script>
+	<script src="libs/pushy-master/pushy.js" defer></script>
+	<script src="js/common.js" defer></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

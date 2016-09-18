@@ -24,6 +24,19 @@
 	.path-page {
 		padding: 0 50px;
 	}
+	.path-gallery-block {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.path-map-block p {
+		text-align: justify;
+	}
+	.path-map-block p:first-of-type {
+		max-width: none;
+	}
 }
 
 /* Large Devices, Wide Screens */
@@ -53,30 +66,22 @@
 	.path-page {
 		padding: 0 15px;
 	}
-	.path-map-block {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		    -ms-flex-align: center;
-		            -ms-grid-row-align: center;
-		        align-items: center; 
+	.path-map-block--img-one {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: auto;
+		padding-left: 0;
 	}
 	.path-map-block p {
 		width: 100%;
-		text-align: justify;
+		/*text-align: justify;*/
 		padding: 0;
-		-webkit-order: 1;
-		-moz-order: 1;
-		-ms-order: 1;
-		-o-order: 1;
-		-webkit-box-ordinal-group: 2;
-		    -ms-flex-order: 1;
-		        order: 1;
 		font-size: 13px;
+		margin-left: 0 !important;
+	}
+	.path-map-block p:first-of-type:before {
+		display: none;
 	}
 	.path-map-block--img {
 		text-align: center;
@@ -93,6 +98,9 @@
 	.path-title__position {
 		margin: 0;
 		text-align: center;
+	}
+	.path-more-list--custom .ocean-articles--read {
+		font-size: 16px;
 	}
 
 }
@@ -178,6 +186,32 @@
 		filter: none;
 		-webkit-filter: grayscale(0);
 	}
+	.path-map-block--images {
+		width: 100%;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.path-map-block--img-two, 
+	.path-map-block--img-three {
+		margin-bottom: 10px;
+	}
+
+	.path-more-list--custom {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center; 
+		width: 100%;
+		margin-bottom: 70px;
+	}
 
 }
 
@@ -192,7 +226,8 @@
 	.inner-list li{
 			width: 49%;
 		}
-	.ocean-articles--name {
+	.ocean-articles--name,
+	.path-more-block--name {
 		font-size: 24px;
 		padding-left: 0;
 
@@ -200,7 +235,7 @@
 	.ocean-articles--name::before {
 		display: none;
 	}
-	
+
 	.path-title {
 		font-size: 34px;
 	}
@@ -274,8 +309,9 @@
 		    -ms-flex-pack: justify;
 		        justify-content: space-between
 	}
-	.path-map-block p {
-			width: 36%;
-			margin-left: 190px;
-		}
+
+	.path-map-block p:first-of-type {
+		margin-left: 190px;
+	}
+
 }
